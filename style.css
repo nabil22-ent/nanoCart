@@ -18,10 +18,6 @@ body {
   line-height: normal;
 }
 
-nav {
-  border: 2px solid pink;
-}
-
 .nav {
   width: 100%;
   height: 55px;
@@ -52,7 +48,7 @@ nav {
   margin-left: 10px;
 }
 .chaldal-logo {
-  background-image: url(./logo-small.webp);
+  background-image: url(./Assets/chaldal-logo.webp);
   background-repeat: no-repeat;
   background-size: contain;
   width: 154px;

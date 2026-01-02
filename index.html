@@ -15,7 +15,9 @@
   </head>
   <body>
     <nav>
+      <!-- Nav Start Div -->
       <div class="nav">
+        <!-- Burger Icon Start -->
         <button onclick="toggleMenu()" id="menuButton" class="hamburger-menu">
           <svg width="23px" height="23px" viewBox="0 0 24 19.641">
             <path
@@ -32,14 +34,29 @@
             ></path>
           </svg>
         </button>
+        <!--  -->
 
         <div class="logo">
           <a href="">
             <img
               class="chaldal-logo"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              alt="chaldal-logo"
           /></a>
         </div>
+        <form>
+          <div class="search">
+            <input
+              name="search_term_string"
+              class="searchBox"
+              type="text"
+              autocomplete="off"
+              placeholder="Search for products (e.g. eggs, milk, potato)"
+              maxlength="400"
+              value=""
+            />
+          </div>
+        </form>
       </div>
     </nav>
     <div id="menu">
