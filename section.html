@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100%;
+      }
+      .landingBanner {
+        background: url(./Assets/landingBanner.png) no-repeat center;
+        background-size: cover;
+        min-height: 400px;
+        display: flex;
+      }
+      .floatingSearchBar {
+        display: flex;
+        text-align: center;
+        color: #fff;
+        min-width: 440px;
+        padding-left: 20px;
+        align-items: center;
+        width: 50%;
+      }
+      .searchBarContainer {
+        display: table;
+      }
+      .searchBarContainer h2 {
+        color: #000;
+        font-size: 30px;
+        font-weight: 700;
+        padding: 0 10px;
+        text-align: left;
+      }
+
+      .searchArea {
+        padding-top: 30px;
+        padding-left: 10px;
+        width: 100%;
+        float: left;
+        position: relative;
+        color: #000;
+      }
+      .searchArea table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      tbody {
+        display: table-row-group;
+        vertical-align: middle;
+        unicode-bidi: isolate;
+        border-color: inherit;
+      }
+      tr {
+        display: table-row;
+        vertical-align: inherit;
+        unicode-bidi: isolate;
+        border-color: inherit;
+      }
+      td {
+        display: table-cell;
+        vertical-align: inherit;
+        unicode-bidi: isolate;
+      }
+      .searchArea input {
+        padding: 4px 12px;
+        width: 100%;
+        height: 40px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 16px;
+        border-radius: 6px 0 0 6px;
+        border: 0.5px solid #c8c8c8;
+        border-right: none;
+        position: relative;
+        top: 0;
+      }
+      .buttonCell {
+        width: 40px;
+      }
+      .buttonCell button {
+        position: relative;
+        top: 0;
+      }
+
+      .searchArea button {
+        border: 0.5px solid #c8c8c8;
+        border-left: none;
+        margin-left: 0;
+        background-color: #fff;
+        font-size: 20px;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 0 6px 6px 0;
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+      svg.search {
+        width: 32px;
+        fill: #7a7a7a;
+        stroke: #7a7a7a;
+        padding: 0 2px 2px 6px;
+      }
+      .banner-image {
+        display: flex;
+        flex-direction: row-reverse;
+        flex: 1;
+        height: clamp(300px, 25vw, 500px);
+      }
+      .banner-image img {
+        padding-left: 30px;
+        position: relative;
+        bottom: -20px;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello From section.html</h1>
+    <section>
+      <div class="landingPage2">
+        <div class="landingBanner">
+          <!-- Flotating Search Bar Begin  -->
+          <div class="floatingSearchBar">
+            <div class="searchBarContainer">
+              <h2><span>Grocery Delivered at your Doorstep</span></h2>
+              <form>
+                <table class="searchArea">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input
+                          itemprop="query-input"
+                          name="mainSearch"
+                          class="searchBox"
+                          type="text"
+                          autocomplete="off"
+                          placeholder="Search for products (e.g. eggs, milk, potato)"
+                          required=""
+                        />
+                      </td>
+                      <td class="buttonCell">
+                        <button type="submit">
+                          <svg
+                            class="search"
+                            version="1.1"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 100 100"
+                          >
+                            <path
+                              d="M44.5,78.5c-18.8,0-34-15.3-34-34s15.3-34,34-34s34,15.3,34,34S63.3,78.5,44.5,78.5z M44.5,18.1  C30,18.1,18.2,30,18.2,44.5S30,70.8,44.5,70.8S70.9,59,70.9,44.5S59,18.1,44.5,18.1z"
+                            ></path>
+                            <path
+                              d="M87.2,91c-1,0-2-0.4-2.7-1.1L63.1,68.5c-1.5-1.5-1.5-3.9,0-5.4s3.9-1.5,5.4,0l21.3,21.3  c1.5,1.5,1.5,3.9,0,5.4C89.2,90.6,88.2,91,87.2,91z"
+                            ></path>
+                          </svg>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+          </div>
+          <!-- Flotating Search Bar Begin  -->
+
+          <div class="banner-image">
+            <img src="./Assets/imageBanner.webp" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
